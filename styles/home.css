@@ -9,7 +9,7 @@ body {
     background: linear-gradient(90deg, rgba(104, 96, 241, 1) 0%, rgba(0, 198, 199, 1) 0%, rgba(3, 179, 221, 1) 100%);
 }
 
-/*Barra de navegación*/
+/* Barra de navegación */
 
 .topbar_root {
     margin: 30px auto;
@@ -72,7 +72,7 @@ body {
     text-align: center;
 }
 
-/*Contenido*/
+/* Estilo general de contenido */
 
 #content-box {
     text-align: center;
@@ -91,6 +91,8 @@ body {
     animation: pulse;
     animation-duration: 1s;
 }
+
+/* Interfaz decorativa box */
 
 #balls-group {
     padding: 10px;
@@ -128,6 +130,8 @@ body {
     border-radius: 50px;
 }
 
+/* Estilos de hijos de contenido */
+
 #content-box h1 {
     font-size: 50px;
     padding-top: 0px;
@@ -159,7 +163,7 @@ body {
     box-shadow: 0 0 5px 4px rgba(121, 121, 121, 0.459);
 }
 
-/*Footer group*/
+/* Grupo footer */
 
 .footer_group {
     margin-top: auto;
@@ -179,7 +183,7 @@ body {
     text-align: center;
 }
 
-/*Footer animation*/
+/* Animación Footer */
 
 svg {
     width: 100%;
@@ -192,8 +196,6 @@ svg {
     width: 100%;
     height: 200px;
 }
-
-/* Animation */
 
 .parallax>use {
     animation: move-forever 25s cubic-bezier(.100, .10, .45, .5) infinite;
@@ -325,5 +327,83 @@ svg {
     }
     .topbar_item {
         margin: 20px;
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+/* Móvil L */
+
+@media (max-width: 425px) {
+    #content-box h1 span {
+        font-size: 34px;
+    }
+    #content-box img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+/* Móvil M */
+
+@media (max-width: 375px) {
+    #content-box h1 span {
+        font-size: 29px;
+    }
+    #content-box h3 {
+        font-size: 19px;
+    }
+    #content-box img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+/* Móvil S */
+
+@media (max-width: 320px) {
+    body {
+        background: rgba(0, 198, 199, 1);
+        /* background: linear-gradient(90deg, rgba(104, 96, 241, 1) 0%, rgba(0, 198, 199, 1) 0%, rgba(3, 179, 221, 1) 100%); */
+    }
+    .topbar_root {
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    .topbar_root #icons {
+        margin-left: 5px;
+    }
+    .topbar_root img {
+        margin: 20px;
+    }
+    .topbar_root .items {
+        margin-top: 50px;
+    }
+    .topbar_item {
+        margin: 20px;
+    }
+    #content-box {
+        margin-right: 25px;
+    }
+    #content-box h1 span {
+        font-size: 24px;
+    }
+    #content-box h3 {
+        font-size: 16px;
+    }
+    #content-box img {
+        max-width: 170px;
+        max-height: 170px;
+    }
+    .footer_group h4 {
+        margin-left: 25px;
+        font-size: 20px;
     }
 }
