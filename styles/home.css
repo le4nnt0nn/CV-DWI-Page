@@ -9,6 +9,66 @@ body {
     background: linear-gradient(90deg, rgba(104, 96, 241, 1) 0%, rgba(0, 198, 199, 1) 0%, rgba(3, 179, 221, 1) 100%);
 }
 
+/* Loading de la página */
+
+#content {
+    animation: fadeIn 3s;
+}
+
+.loading {
+    animation: fadeOut 3s;
+    width: 40px;
+    margin: 70px auto;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.dot1 {
+    background-color: rgb(243, 81, 81);
+    animation: jump-up 0.6s 0.1s linear infinite;
+}
+
+.dot2 {
+    background-color: rgb(247, 250, 96);
+    animation: jump-up 0.6s 0.2s linear infinite;
+}
+
+.dot3 {
+    background-color: rgb(96, 250, 76);
+    animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@Keyframes jump-up {
+    50% {
+        transform: translate(0, 15px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ /* TODO - HACER QUE LA ANIMACIÓN SE OCULTE CUANDO SE COMPLETE */
+@keyframes fadeOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
 /* Barra de navegación */
 
 .topbar_root {
@@ -85,11 +145,7 @@ body {
     background-color: #fff;
     animation: pulse;
     animation-duration: 1s;
-}
-
-#content-box:hover {
-    animation: pulse;
-    animation-duration: 1s;
+    animation-delay: 3s;
 }
 
 /* Interfaz decorativa box */
