@@ -1,16 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./styles/home.css">
     <title>🏠 | Antonio Cortés</title>
 </head>
+
 <body>
-    <div id="loader">
-        <div id="shadow"></div>
-        <div id="box"></div>
-      </div>
+    <!--Carga de pantalla-->
+    <!-- <div id="loader-wrapper">
+        <div id="loader">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div> -->
+
+    <!--Contenido-->
+    <div id="content">
+        <!--Topbar-->
+        <nav class="topbar_root">
+            <!--Linkedin Logo-->
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/antonio-cort%C3%A9s-jim%C3%A9nez/">
+                    <img src="./images/linkedin.png" alt="logoLinkAlt" style="width: 50px; height: 50px;"></a>
+                <a href="https://github.com/le4nnt0nn">
+                    <img src="./images/github.png" alt="logoGitAlt" style="width: 50px; height: 50px;"></a>
+            </div>
+            <!--Nav items-->
+            <div class="items">
+                <div class="topbar_item"> <a href="index.html">Home</a></div>
+                <div class="topbar_item"> <a href="./views/about.html">About</a></div>
+                <div class="topbar_item"> <a href="./views/skills.html">Skills</a></div>
+                <div class="topbar_item"> <a href="./views/cv.html">CV</a></div>
+            </div>
+        </nav>
+        <header>
+            <div id="content-box">
+                <ul id="balls-group">
+                    <li id="ball1" class="ball-touch"></li>
+                    <li id="ball2" class="ball-touch"></li>
+                    <li id="ball3" class="ball-touch"></li>
+                </ul>
+                <h1><span>{</span> Soy <span id="content-box-name">Antonio</span> <span>}</span></h1>
+                <h3>Me encanta programar y aprender cada día</h3>
+                <img id="profile-photo" src="./images/profile.jpg" style="width: 250px; height: 250px;">
+            </div>
+        </header>
+        <!--Footer-->
+        <div class="footer_group">
+            <h4>Antonio Cortés © 2021</h4>
+        </div>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+
+
+    <script>
+        // Función de carga
+        /* $(window).on('load', function ()
+        {
+            $("#content").hide();
+            $("#loader-wrapper").fadeToggle(5000, function () {
+                $("#content").fadeIn(1000);
+            });
+        }); */
+    </script>
 </body>
+
 </html>
