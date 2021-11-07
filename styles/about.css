@@ -92,6 +92,14 @@ h1:hover span {
   transition: 0.5s;
 }
 
+#itcon-logo {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #fff;
+  width: 200px;
+  height: 100px;
+}
+
 #ada-logo {
   margin-bottom: 20px;
   border-radius: 20px;
