@@ -1,0 +1,150 @@
+/* Biografía */
+.bio {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    color: #fcfcfc;
+    text-align: center;
+}
+
+.bio p {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.bio span {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+.bio #about_animated {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Efecto deslumbrante para h1 */
+
+.bio h1{
+    color: #FFDF8E;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer
+  }
+  h1 span{
+    transition: .5s linear
+  }
+  h1:hover span:nth-child(1){
+    margin-right: 5px
+  }
+  h1:hover span:nth-child(1):after{
+    content: "";
+  }
+  h1:hover span:nth-child(2){
+    margin-left: 30px
+  }
+  h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+  }
+
+/* Cartas e información */
+
+.info-career {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.info-career h2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #FFDF8E;
+}
+
+.card {
+  align-items: center;
+  width: 400px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10px;
+  background: #ffffff;
+  color: rgb(36, 36, 36);
+  border-radius: 30px;
+  box-shadow: 0px 7px 7px rgba(36, 35, 35, 0.521);
+}
+
+#ada-logo {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: #fff;
+  width: 200px;
+  height: 80px;
+}
+
+.card p {
+  font-size: 30px;
+  background: transparent;
+  color: #414345;
+  text-align: center;
+}
+
+.card .duration_time {
+  color: #232526;
+}
+
+.card #cambridge-logo {
+  width: 80px;
+  height: 100px;
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+.card #mtcna-logo {
+  width: 200px;
+  height: 200px;
+  margin: 0 0 -30px;
+  background: transparent;
+}
+
+.card #see-more {
+  margin: 20px;
+  font-size: 20px;
+  color: #232526;
+}
+
+.card #see-more a{
+  color: rgb(57, 115, 238);
+  font-weight: bold;
+  text-decoration: none;
+  background: transparent;
+}
+
+/* Responsive para las cartas */
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 300px;
+  }
+}
+
+/* Móvil S */
+
+@media (max-width: 320px) {
+    .bio #about_animated {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 35px;
+        font-weight: bold;
+    }
+}
+  
