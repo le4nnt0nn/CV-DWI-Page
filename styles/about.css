@@ -1,3 +1,7 @@
+body {
+  animation: fadeIn 1s;
+}
+
 /* Biografía */
 .bio {
   margin: 0 auto;
@@ -79,6 +83,13 @@ h1:hover span {
   color: rgb(36, 36, 36);
   border-radius: 30px;
   box-shadow: 0px 7px 7px rgba(36, 35, 35, 0.521);
+  transition: 0.5s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-50px);
+  transition: 0.5s;
 }
 
 #ada-logo {
