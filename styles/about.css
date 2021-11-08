@@ -149,6 +149,27 @@ h1:hover span {
   background: transparent;
 }
 
+#hobbies_content {
+  display: flex;
+  flex-direction: row;
+}
+
+#hobbies_content #c-1 {
+  color: #1a9ce2;
+}
+
+#hobbies_content #c-2 {
+  color: #ed3675;
+}
+
+#hobbies_content #c-3 {
+  color: #ea3041;
+}
+
+#hobbies_content #c-4 {
+  color: #f2af00;
+}
+
 /* Responsive para las cartas */
 
 @media screen and (max-width: 1000px) {
