@@ -3,6 +3,9 @@ h2 {
     text-align: center;
     color: #FFDF8E;
 }
+body {
+    animation: fadeIn 1s;
+}
 
 .card {
     width: 600px;
@@ -57,9 +60,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-.card .progress {
+.card .progress_back {
     height: 5px;
-    background: #FFDF8E;
+    background: #f5aaba;
     border-radius: 25px;
     margin-bottom: 20px;
 }
