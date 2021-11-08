@@ -111,7 +111,8 @@ h1:hover span {
 .card p {
   font-size: 30px;
   background: transparent;
-  color: #414345;
+  color: rgb(57, 115, 238);;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -134,13 +135,15 @@ h1:hover span {
 }
 
 .card #see-more {
+  font-weight: 500;
   margin: 20px;
   font-size: 20px;
   color: #232526;
 }
 
 .card #see-more a {
-  color: rgb(57, 115, 238);
+  font-size: 29px;
+  color: rgb(123, 147, 255);
   font-weight: bold;
   text-decoration: none;
   background: transparent;
