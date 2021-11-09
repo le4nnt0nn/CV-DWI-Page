@@ -170,11 +170,38 @@ h1:hover span {
   color: #f2af00;
 }
 
+#hobbies_content .card {
+  width: 300px;
+  padding: 20px;
+}
+
 /* Responsive para las cartas */
 
 @media screen and (max-width: 1000px) {
   .card {
     width: 300px;
+  }
+}
+
+/* Portátil */
+
+@media (max-width: 1024px) {
+  #hobbies_content .card {
+    width: 200px;
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  #hobbies_content {
+    display: flex;
+    flex-direction: column;
+  }
+  #hobbies_content .card {
+    width: 200px;
+    
   }
 }
 
