@@ -63,6 +63,7 @@ h1:hover span {
   text-align: center;
   justify-content: center;
   padding: 50px 0;
+  justify-content: space-around;
 }
 
 .info-career h2 {
@@ -202,6 +203,58 @@ h1:hover span {
   #hobbies_content .card {
     width: 200px;
     
+  }
+}
+
+/* Móvil M */
+
+@media (max-width: 375px) {
+  body {
+    background: rgba(0, 198, 199, 1);
+    /* background: linear-gradient(90deg, rgba(104, 96, 241, 1) 0%, rgba(0, 198, 199, 1) 0%, rgba(3, 179, 221, 1) 100%); */
+  }
+  #content-box h1 span {
+    font-size: 29px;
+  }
+  #content-box h3 {
+    font-size: 19px;
+  }
+  #content-box img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .loading {
+    margin-right: 105px;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  .topbar_item a {
+    font-size: 15px;
+  }
+}
+
+/* Móvil L */
+
+@media (max-width: 425px) {
+  #content-box h1 span {
+    font-size: 34px;
+  }
+  #content-box img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .loading {
+    margin-right: 138px;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50px;
   }
 }
 
