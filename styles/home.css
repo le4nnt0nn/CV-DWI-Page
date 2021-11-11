@@ -345,6 +345,10 @@ svg {
 /* Móvil M */
 
 @media (max-width: 375px) {
+  body {
+    background: rgba(0, 198, 199, 1);
+    /* background: linear-gradient(90deg, rgba(104, 96, 241, 1) 0%, rgba(0, 198, 199, 1) 0%, rgba(3, 179, 221, 1) 100%); */
+  }
   #content-box h1 span {
     font-size: 29px;
   }
@@ -364,6 +368,9 @@ svg {
     display: inline-block;
     border-radius: 50px;
   }
+  .topbar_item a {
+    font-size: 15px;
+  }
 }
 
 /* Móvil S */
@@ -377,7 +384,7 @@ svg {
     flex-direction: column;
     margin-left: 25px;
   }
-  .topbar_root #icons {
+  .topbar_root .icons {
     margin-left: 5px;
   }
   .topbar_root img {
@@ -386,9 +393,8 @@ svg {
   .topbar_root .items {
     margin-top: 50px;
   }
-  .topbar_item {
-    margin: 20px;
-    margin-left: 10px;
+  .topbar_item a {
+    font-size: 12px;
   }
   .loading {
     margin-right: 60px;
