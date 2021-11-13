@@ -225,6 +225,9 @@ h1:hover span {
   max-height: 30%;
   overflow: auto;
 }
+.popup .content a{
+  color: #1a9ce2;
+}
 
 @media screen and (max-width: 700px){
   .box{
