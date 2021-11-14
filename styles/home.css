@@ -394,10 +394,7 @@ svg {
     margin-top: 50px;
   }
   .topbar_item a {
-    font-size: 12px;
-  }
-  .loading {
-    margin-right: 60px;
+    font-size: 10px;
   }
   .dot {
     width: 20px;
